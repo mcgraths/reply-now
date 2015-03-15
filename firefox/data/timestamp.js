@@ -33,27 +33,29 @@ $(function() {
 
                     if (moment().diff(m, 'minutes') > 10080) {
                         // Older than a week does nothing
-                    } else if (moment().diff(m, 'minutes') > 60) {
+                    } else if (moment().diff(m, 'minutes') > 2880) {
                         $('span', that).css('color', '#FF4136');
-                    } else if (moment().diff(m, 'minutes') > 15) {
+                    } else if (moment().diff(m, 'minutes') > 1440) {
                         $('span', that).css('color', '#FF851B');
-                    } else {
-                        $('span', that).css('color', '#2ECC40');
-                    }
+                    } 
+                    // else {
+                    //     $('span', that).css('color', '#2ECC40');
+                    // }
                 } else {
                     $('span', that).html(m.fromNow());
 
                     if (moment().diff(m, 'minutes') > 10080) {
                         // Older than a week does nothing
-                    } else if (moment().diff(m, 'minutes') > 60) {
+                    } else if (moment().diff(m, 'minutes') > 2880) {
                         $('span', that).css('font-weight', 'bold');
                         $('span', that).css('color', '#FF4136');
-                    } else if (moment().diff(m, 'minutes') > 15) {
+                    } else if (moment().diff(m, 'minutes') > 1440) {
                         $('span', that).css('font-weight', 'bold');
                         $('span', that).css('color', '#FF851B');
-                    } else {
-                        $('span', that).css('color', '#2ECC40');
-                    }
+                    } 
+                    // else {
+                    //     $('span', that).css('color', '#2ECC40');
+                    // }
                 }
             }
         });
