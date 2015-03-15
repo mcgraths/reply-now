@@ -6,6 +6,7 @@
   "content_scripts": [
   {
     "matches": ["https://mail.google.com/mail/*"],
+    "css": ["lib/style.css"],
     "js": ["lib/jquery.min.js", "lib/moment.min.js", "scripts/timestamp.js"],
     "run_at": "document_idle"
   }

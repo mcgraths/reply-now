@@ -1,0 +1,11 @@
+.urgent-reply {
+	color: #FF4136;
+	-webkit-animation:flash 2s infinite; /* Safari and Chrome */
+  }
+
+@-webkit-keyframes flash /* Firefox */
+{
+	0%   {color: #FF4136;}
+	50%  {color: #880000;}
+	100%   {color: #FF4136;}
+}

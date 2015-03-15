@@ -33,6 +33,8 @@ function setTimestamps() {
 
                     if (moment().diff(m, 'minutes') > 10080) {
                         // Older than a week does nothing
+                    } else if (moment().diff(m, 'minutes') > 4320) {
+                        $('span', that).addClass('urgent-reply');
                     } else if (moment().diff(m, 'minutes') > 2880) {
                         $('span', that).css('color', '#FF4136');
                     } else if (moment().diff(m, 'minutes') > 1440) {
@@ -46,6 +48,9 @@ function setTimestamps() {
 
                     if (moment().diff(m, 'minutes') > 10080) {
                         // Older than a week does nothing
+                    } else if (moment().diff(m, 'minutes') > 4320) {
+                        $('span', that).addClass('urgent-reply');
+                        $('span', that).css('font-weight', 'bold');
                     } else if (moment().diff(m, 'minutes') > 2880) {
                         $('span', that).css('font-weight', 'bold');
                         $('span', that).css('color', '#FF4136');
